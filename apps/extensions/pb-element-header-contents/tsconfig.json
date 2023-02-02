@@ -1,0 +1,7 @@
+{
+    "extends": "../../../tsconfig",
+    "include": [".", "../../theme/pageBuilder/components/Home/submenu.tsx"],
+    "compilerOptions": {
+      "composite": false
+    }
+  }

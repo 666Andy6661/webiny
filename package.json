@@ -1,0 +1,93 @@
+{
+	"name": "webiny",
+	"version": "0.1.0",
+	"private": true,
+	"packageManager": "yarn@3.3.1",
+	"dependencies": {
+		"@webiny/aws-layers": "5.34.0",
+		"@webiny/cli": "5.34.0",
+		"@webiny/cli-plugin-deploy-pulumi": "5.34.0",
+		"@webiny/cli-plugin-scaffold": "5.34.0",
+		"@webiny/cli-plugin-scaffold-admin-app-module": "5.34.0",
+		"@webiny/cli-plugin-scaffold-ci": "5.34.0",
+		"@webiny/cli-plugin-scaffold-graphql-service": "5.34.0",
+		"@webiny/cli-plugin-workspaces": "5.34.0",
+		"@webiny/cwp-template-aws": "5.34.0",
+		"@webiny/project-utils": "5.34.0",
+		"@webiny/serverless-cms-aws": "5.34.0"
+	},
+	"keywords": [
+		"aws+dynamodb"
+	],
+	"devDependencies": {
+		"@babel/cli": "^7.19.3",
+		"@babel/core": "^7.19.3",
+		"@babel/plugin-proposal-class-properties": "^7.18.6",
+		"@babel/plugin-proposal-object-rest-spread": "^7.10.4",
+		"@babel/plugin-proposal-throw-expressions": "^7.18.6",
+		"@babel/plugin-transform-runtime": "^7.16.4",
+		"@babel/preset-env": "^7.19.4",
+		"@babel/preset-typescript": "^7.18.6",
+		"@types/jest": "^26.0.20",
+		"@types/node": "^12.12.22",
+		"@types/react": "^17.0.39",
+		"@types/react-dom": "^17.0.11",
+		"@typescript-eslint/eslint-plugin": "^5.5.0",
+		"@typescript-eslint/parser": "^5.5.0",
+		"babel-plugin-dynamic-import-node": "^2.3.3",
+		"babel-plugin-lodash": "^3.3.4",
+		"babel-plugin-module-resolver": "^4.1.0",
+		"chalk": "^4.1.0",
+		"cross-env": "^5.0.2",
+		"eslint": "^8.4.1",
+		"eslint-config-standard": "^16.0.3",
+		"eslint-import-resolver-babel-module": "^5.3.1",
+		"eslint-plugin-import": "^2.25.3",
+		"eslint-plugin-jest": "^25.3.0",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-promise": "^5.2.0",
+		"eslint-plugin-react": "^7.27.1",
+		"eslint-plugin-standard": "^5.0.0",
+		"execa": "^5.0.0",
+		"jest": "^28.1.0",
+		"merge": "^1.2.1",
+		"prettier": "^2.3.2",
+		"ts-jest": "^28.0.5",
+		"typescript": "4.7.4"
+	},
+	"workspaces": {
+		"packages": [
+			"apps/admin",
+			"apps/website",
+			"apps/theme",
+			"apps/api/graphql",
+			"apps/api/headlessCMS",
+			"apps/extensions/pb-element-gradient-circle",
+			"apps/extensions/pb-element-webinar",
+			"apps/extensions/pb-element-header-contents",
+			"apps/extensions/pb-element-blog"
+		]
+	},
+	"scripts": {
+		"test": "jest --config jest.config.js --passWithNoTests",
+		"test:unit": "cross-env TEST_TYPE=unit yarn test",
+		"test:integration": "cross-env TEST_TYPE=integration yarn test",
+		"test:e2e": "cross-env TEST_TYPE=e2e yarn test",
+		"eslint": "eslint \"**/*.{js,jsx,ts,tsx}\" --max-warnings=0",
+		"eslint:fix": "yarn eslint --fix",
+		"prettier": "prettier \"**/**/*.{js,jsx,ts,tsx,json}\" --config .prettierrc.js",
+		"prettier:check": "yarn prettier --check",
+		"prettier:fix": "yarn prettier --write",
+		"setup-project": "node ./scripts/setupProject.js",
+		"setup-env-files": "node ./scripts/setupEnvFiles.js",
+		"link-workspaces": "node ./scripts/linkWorkspaces.js",
+		"postinstall": "yarn link-workspaces"
+	},
+	"resolutions": {
+		"@types/react": "17.0.39",
+		"react": "17.0.2",
+		"typescript": "4.7.4",
+		"react-dom": "17.0.2",
+		"codex-tooltip": "1.0.2"
+	}
+}
