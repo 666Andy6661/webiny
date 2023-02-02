@@ -3,8 +3,7 @@
 .webpack
 .webiny
 .tmp/
-.env
-.env.*
+
 .npmrc
 .pulumi
 Pulumi.*.yaml
