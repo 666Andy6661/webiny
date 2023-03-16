@@ -1,11 +1,11 @@
 import { PbRenderElementPlugin } from "@webiny/app-page-builder/types";
-import { SpaceX } from "./SpaceX";
+import { HeaderContent } from "./HeaderContent";
 
 const plugin = {
-  name: "pb-render-page-element-space-x",
+  name: "pb-render-page-element-header-content",
   type: "pb-render-page-element",
-  elementType: "spaceX",
-  render: SpaceX
+  elementType: "header-content",
+  render: HeaderContent
 } as PbRenderElementPlugin;
 
 export default plugin;

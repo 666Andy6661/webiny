@@ -6,9 +6,9 @@
     "dependencies": {
         "@apollo/client": "^3.7.0",
         "@emotion/styled": "10.3.0",
-        "@webiny/app-page-builder": "5.34.0",
-        "@webiny/ui": "5.34.0",
-        "@webiny/validation": "5.34.0",
+        "@webiny/app-page-builder": "5.34.5",
+        "@webiny/ui": "5.34.5",
+        "@webiny/validation": "5.34.5",
         "classnames": "^2.2.6",
         "react": "^17.0.2"
     }

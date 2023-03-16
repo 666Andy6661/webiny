@@ -32,7 +32,6 @@ const FooterNavigation: React.FC<NavigationProps> = ({ data }) => {
     if (!Array.isArray(items)) {
         return null;
     }
-    // console.log(items);
 
     return (
         <div className="menu__wrapper">

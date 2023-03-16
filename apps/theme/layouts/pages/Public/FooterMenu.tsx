@@ -74,7 +74,6 @@ const FooterMenu: React.FC<MenuProps> = ({ slug, component: Component }) => {
                     title: null,
                     slug: null
                 });
-                // console.log(props)
 
                 return (
                     <>

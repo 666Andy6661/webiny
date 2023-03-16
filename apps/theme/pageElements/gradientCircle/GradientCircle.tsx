@@ -47,25 +47,19 @@ const Circle = styled.div`
 
 // The renderer React component.
 export const GradientCircle = createRenderer(() => {
-  // Let's retrieve the variables that were chosen by
-  // the user upon dropping the page element onto the page.
+
   const { getElement } = useRenderer();
   const element = getElement<GradientCircleProps>();
-  // const { data } = element;
-
 
   const { rotation, zindex } = element.data.variables;
-  console.log(element)
   const circleStyle = {
-    // top: `${element.data.settings?.data.settings?.margin?.desktop?.top}`,
-    // right: `${props.Pbelement?.data.settings?.margin?.desktop?.right}`,
-    
-    width: `${element.data.settings?.height?.desktop?.value}`,
+
+    width: `${element.data.settings?.width?.desktop?.value}`,
     height: `${element.data.settings?.height?.desktop?.value}`,
 
     // height: "50px",
     // width: "50px",
-    transform: `rotate(${rotation})`,
+    transform: `rotate(${rotation + "deg"})`,
     zIndex: `${zindex}`,
   } as React.CSSProperties
   const outerStyle = {
@@ -77,7 +71,7 @@ export const GradientCircle = createRenderer(() => {
   // If the data has been retrieved, we render it via a simple unordered list.
   return (
     <div style={outerStyle}>
-      <Circle className="gradient_circle" style={circleStyle}/>
+      <Circle className="gradient_circle" style={circleStyle} id="circle"/>
     </div>
   );
 });

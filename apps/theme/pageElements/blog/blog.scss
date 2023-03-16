@@ -1,0 +1,83 @@
+.blogs-container { 
+    width: 100%;
+    padding: 15px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .blog-card {
+        height: 100%;
+        padding: 5px;
+        margin: 0 10px;
+
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        a {
+            text-decoration: none;
+        }
+
+        &-title {
+            flex: 2;
+            font-size: large;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        &-time{
+            font-size: 1rem;
+            font-weight:lighter;
+        }
+
+        &-abstract{
+            flex: 3;
+            font-size: 1rem;
+            margin: 25px 0 35px 0;
+        }
+
+        &-media {
+            max-width: 25vw;
+            max-height: 300px;
+        }
+
+        // same as primary button
+        &-button {
+            display: flex;
+            align-items: center !important;
+            justify-content: center;
+            vertical-align: top;
+            text-align: center;
+
+            padding: 8px 50px;
+            box-sizing: border-box;
+            min-width: 100px;
+            
+            font-family: var(--webiny-theme-typography-primary-font-family);
+            font-size: 1rem;
+            font-weight: bold;
+            letter-spacing: 0.025em;
+            
+            cursor: pointer;
+            border: 2px solid var(--webiny-pb-theme-text-primary, #000078) ;
+            border-radius: 999px;
+            transition: all 0.2s ease;
+
+            color: var(--webiny-theme-color-primary, #ff6201);
+            background-color: #ffffff;
+            
+            &:hover {
+                background-color: var(--webiny-pb-theme-text-primary, #000078);
+                color: #ffffff;
+                box-shadow: 0 7px 14px rgba(50,50,93,0.1), 0 3px 6px rgba(0,0,0,0.08);
+                text-decoration: none;
+            }
+            &:active {
+                transform: translateY(1px);
+            }
+        }
+    }
+}

@@ -20,7 +20,7 @@ export const Header: React.FC = () => {
     const { layoutProps } = usePage();
     const { settings } = layoutProps;
     const { name, logo } = settings;
-    console.log(settings)
+    // console.log(settings)
     
     useEffect(() => {
         const initMenuColor = getComputedStyle(document.body).getPropertyValue("--webiny-theme-color-gradient-shadow");

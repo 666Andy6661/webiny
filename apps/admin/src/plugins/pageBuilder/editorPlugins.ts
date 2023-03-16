@@ -63,8 +63,20 @@ import { gridPresets } from "@webiny/app-page-builder/editor/plugins/gridPresets
 import webinarElement from "@extensions/pb-element-webinar/admin";
 import contentsHeaderElement from "@extensions/pb-element-header-contents/admin";
 import blogElement from "@extensions/pb-element-blog/admin";
+
 import spaceX from "theme/pageElements/spaceX/admin";
 import gradientCircle from "theme/pageElements/gradientCircle/admin"
+import customizeCta from "theme/pageElements/customizeCta/admin"
+import floatBubble from "theme/pageElements/floatBubble/admin"
+import imageBubble from "theme/pageElements/imageBubble/admin"
+import blog from "theme/pageElements/blog/admin"
+import rawHtml from "theme/pageElements/rawHTML/admin"
+import rawJs from "theme/pageElements/customerScript/admin"
+import customizeForm from "theme/pageElements/customizeForm/admin"
+import headerContent from "theme/pageElements/headerContent/admin"
+import fixedButton from "theme/pageElements/fixedButton/admin"
+import calendar from "theme/pageElements/calendar/admin"
+
 
 export default [
     // Elements
@@ -130,8 +142,19 @@ export default [
     pageSettingsPlugins,
     spaceX,
     gradientCircle,
+    customizeCta,
+    floatBubble,
+    imageBubble,
+    blog,
+    rawHtml,
+    rawJs,
+    customizeForm,
+    fixedButton,  
+    headerContent,
+    calendar,                                 
     // gradientCircleElement(),
     webinarElement(),
     contentsHeaderElement(),
     blogElement()
+
 ];

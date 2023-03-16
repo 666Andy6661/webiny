@@ -42,10 +42,17 @@ import contentsHeaderElement from "@extensions/pb-element-header-contents/render
 import blogElement from "@extensions/pb-element-blog/render";
 import spaceX from "theme/pageElements/spaceX/website";
 import gradientCircle from "theme/pageElements/gradientCircle/website"
-
-
+import customizeCta from "theme/pageElements/customizeCta/website"
+import floatBubble from "theme/pageElements/floatBubble/website"
+import imageBubble from "theme/pageElements/imageBubble/website"
+import blog from "theme/pageElements/blog/website"
+import rawHtml from "theme/pageElements/rawHTML/website"
+import rawJs from "theme/pageElements/customerScript/website"
+import customizeForm from "theme/pageElements/customizeForm/website"
+import headerContent from "theme/pageElements/headerContent/website"
+import fixedButton from "theme/pageElements/fixedButton/website"
+import calendar from "theme/pageElements/calendar/website"
 export default [
-    // Elements
     document(),
     grid(),
     block(),
@@ -83,6 +90,16 @@ export default [
     property,
     spaceX,
     gradientCircle,
+    customizeCta,
+    floatBubble,
+    imageBubble,
+    blog,
+    rawHtml,
+    rawJs,
+    customizeForm,
+    fixedButton,  
+    headerContent,
+    calendar,
     responsiveMode(),
     // gradientCircleElement(),
     webinarElement(),

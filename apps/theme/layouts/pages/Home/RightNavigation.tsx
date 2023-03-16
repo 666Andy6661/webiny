@@ -61,7 +61,7 @@ const LeftNavigation: React.FC<NavigationProps> = ({ data }) => {
     }
 
     return (
-        <ul >
+        <ul className="navbar-child">
             {data.items.slice( (items.length / 2), items.length ).map((item, parentIndex) => {
                 if (Array.isArray(item.children)) {
                     return (

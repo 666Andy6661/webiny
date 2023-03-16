@@ -4,17 +4,19 @@
 	"private": true,
 	"packageManager": "yarn@3.3.1",
 	"dependencies": {
-		"@webiny/aws-layers": "5.34.0",
-		"@webiny/cli": "5.34.0",
-		"@webiny/cli-plugin-deploy-pulumi": "5.34.0",
-		"@webiny/cli-plugin-scaffold": "5.34.0",
-		"@webiny/cli-plugin-scaffold-admin-app-module": "5.34.0",
-		"@webiny/cli-plugin-scaffold-ci": "5.34.0",
-		"@webiny/cli-plugin-scaffold-graphql-service": "5.34.0",
-		"@webiny/cli-plugin-workspaces": "5.34.0",
-		"@webiny/cwp-template-aws": "5.34.0",
-		"@webiny/project-utils": "5.34.0",
-		"@webiny/serverless-cms-aws": "5.34.0"
+		"@webiny/aws-layers": "5.34.5",
+		"@webiny/cli": "5.34.5",
+		"@webiny/cli-plugin-deploy-pulumi": "5.34.5",
+		"@webiny/cli-plugin-scaffold": "5.34.5",
+		"@webiny/cli-plugin-scaffold-admin-app-module": "5.34.5",
+		"@webiny/cli-plugin-scaffold-ci": "5.34.5",
+		"@webiny/cli-plugin-scaffold-graphql-service": "5.34.5",
+		"@webiny/cli-plugin-workspaces": "5.34.5",
+		"@webiny/cwp-template-aws": "5.34.5",
+		"@webiny/project-utils": "5.34.5",
+		"@webiny/serverless-cms-aws": "5.34.5",
+		"html-react-parser": "^3.0.9",
+		"react-hubspot-form": "^1.3.7"
 	},
 	"keywords": [
 		"aws+dynamodb"

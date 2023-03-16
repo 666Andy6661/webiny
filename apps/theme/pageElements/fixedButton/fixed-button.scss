@@ -1,0 +1,55 @@
+
+.fixed-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-family: var(--webiny-theme-typography-primary-font-family);
+    font-size: 1rem;
+    color: #000000;
+    box-shadow: 5px 5px 7px #000000b8;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none !important;
+    border-radius: 999px;
+    background-color: #ffffff;
+    z-index: 999;
+
+    height: 50px;
+    width: 50px;
+
+    img {
+        position: absolute;
+        width: 25px !important;
+        height: 25px !important;
+
+        opacity: 1;
+        transition: opacity 0.1s ease-in;
+    }
+
+    p {
+        opacity: 0;
+        white-space: nowrap;
+        transition: opacity 0.1s ease-in-out;
+        color: #ffffff;
+    }
+
+    &:hover {
+
+        img{
+            opacity: 0;
+        }
+
+        p {
+            opacity: 1;
+            transition: opacity 0.4s ease-in-out;
+        }
+    }
+}
+

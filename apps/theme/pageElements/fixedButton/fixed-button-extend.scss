@@ -1,0 +1,36 @@
+.fixed-button-extend {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-family: var(--webiny-theme-typography-primary-font-family);
+    font-size: 1rem;
+    color: #ffffff;
+    box-shadow: 5px 5px 7px #000000b8;
+    border: 0;
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none !important;
+    border-radius: 999px;
+    background-color: #ffffff;
+    z-index: 999;
+    
+
+    // height: 50px;
+    // width: 50px;
+
+    
+
+    
+
+    // &:hover {
+
+       
+    // }
+}
+

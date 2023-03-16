@@ -10,11 +10,7 @@ import {
 
 import CircleIcon from "./assets/gradient_1.png";
 import { GradientCircle, GradientCircleProps } from "./GradientCircle";
-// import GradientCircleSettings from "./gradientCircleSettings";
-// import {
-  
-//     classes,
-// } from "@webiny/app-page-builder/editor/plugins/elementSettings/components/StyledComponents";
+
 import { validation } from "@webiny/validation";
 const Circle = styled.div`
     border-radius: 50%;
@@ -23,32 +19,6 @@ const Circle = styled.div`
     width: 50px;
     background-image: url(${CircleIcon});
 `
-// const SaveButton = styled.button`
-//   width: 150px;
-//   background-color: #fa5723;
-//   border: none;
-//   color: #ffffff;
-//   height: 2rem;
-//   border-radius: 5px;
-//   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-//   cursor: pointer;
-  
-//   &:hover {
-//     background-color: #fa5923ee;
-//     font-weight: 500;
-//     /* border-style: solid; */
-//     box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
-//     text-decoration:none;
-//     // transform: translateY(-1px);
-//   }
-
-//   &:active {
-//     transform: translateY(1px);
-//   }
-
-
-// `
 const PreviewBox = styled("div")({
     display: "flex",
     textAlign: "center",
@@ -74,12 +44,12 @@ const INITIAL_ELEMENT_DATA: GradientCircleProps = {
     settings: {
       height: {
         desktop: {
-          value: "50",
+          value: "100px",
         }
       },
       width: {
         desktop: {
-          value: "50",
+          value: "100px",
         }
       },
     }
@@ -122,38 +92,12 @@ export default  [
                     type: "gradient-circle",
                     elements: [],
                     data: INITIAL_ELEMENT_DATA,
-                    // data: {
-                        // The URL property will be populated when user enters the URL in the element settings.
-                        // circle: {
-                        //     width: 200,
-                        //     height: 200,
-                        // },
-                        
-                        // settings: {
-                        //     // width: createInitialPerDeviceSettingValue({ value: "200px"}, DisplayMode.DESKTOP),
-                        //     height: createInitialPerDeviceSettingValue({ value: "200px"}, DisplayMode.DESKTOP),
-                        //     width: "",
-                        //     // height: "",
-                       
-                        // },
-                        // gradientCircle: {
-                        //     rotation: "",
-                        //     zindex:"",
-                            
-                        // }
-                        
-                    // },
                     ...options
                     
                 };
             },
 
             render : GradientCircle 
-
-            // renderElementPreview({ width, height }) {
-            //     return <img style={{ width, height }} alt={"Gradient Circle"} />;
-            // },
-
 
         } as PbEditorPageElementPlugin,
 
